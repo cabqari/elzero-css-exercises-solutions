@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Three</title>
+
+    <style>
+      .ul {
+        width: 400px;
+        margin: 20px auto;
+        background-color: white;
+        list-style: none;
+      }
+      ul .language {
+        background-color: #eee;
+        padding: 10px;
+        margin: 20px 0;
+      }
+      .child {
+        background-color: #fff;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      .language ul {
+        list-style-position: inside;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <ul class="ul">
+      <li class="language">
+        HTML
+        <ol start="10">
+          <li class="child">Slim</li>
+          <li class="child">Pugjs</li>
+          <li class="child">HAML</li>
+        </ol>
+      </li>
+      <li class="language">
+        CSS
+        <ol type="I" start="10">
+          <li class="child">SASS</li>
+          <li class="child">LESS</li>
+          <li class="child">PostCSS</li>
+        </ol>
+      </li>
+      <li class="language">
+        JavaScript
+        <ul>
+          <li class="child">Vuejs</li>
+          <li class="child">Sveltejs</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
