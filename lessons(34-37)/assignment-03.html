@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Three</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        width: 400px;
+        background-color: #d1d1d1;
+        padding: 20px;
+        margin: 20px auto;
+        position: relative;
+        border-left: 5px solid #E91E63;
+      }
+      p::before {
+        content: attr(data-person);
+        background-color: #d1d1d1;
+        padding: 10px;
+        position: absolute;
+        left: -100px;
+        top: 50%;
+        margin-top: -19px;
+      }
+      p::after {
+        content: "";
+        position: absolute;
+        border: 8px solid;
+        border-color: transparent #E91E63 transparent transparent;
+        left: -20px;
+        top: 50%;
+        margin-top: -8px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <p data-person="Osama">This Is Very Very Long Comment Number One</p>
+    <p data-person="Ahmed">This Is Very Very Long Comment Number Two</p>
+    <p data-person="Sayed">This Is Very Very Long Comment Number Three</p>
+  </body>
+</html>
