@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment One</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div {
+        display: inline-block;
+        margin: 20px;
+        background-color: #eee;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 2px solid black;
+        position: relative;
+        counter-increment: counting;
+        box-shadow:  -6px -6px 0 0 #E91E63, 6px 6px 0 0 #2196F3;
+      }
+      div::before {
+        content: "Element";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -9px;
+        margin-left: -29px;
+      }
+      div::after {
+        content: counter(counting);
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        margin-left: -15px;
+        padding: 6px 11px;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>
