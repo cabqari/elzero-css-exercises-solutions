@@ -3,14 +3,93 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment </title>
+    <title>Assignment Three</title>
 
     <style>
-
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .container {
+        width: 550px;
+        margin: 20px auto;
+      }
+      .parent-one,
+      .parent-two {
+        width: 45%;
+        float: left;
+        background-color: #eee;
+        padding: 20px;
+        text-transform: capitalize;
+      }
+      .parent-one {
+        margin-right: 55px;
+        position: relative;
+      }
+      .parent-one::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        background-color: #03A9F4;
+        right: calc(-55px / 2);
+        top: 0;
+      }
+      .parent-one::after {
+        content: "or";
+        position: absolute;
+        top: 50%;
+        right: calc(-55px / 2);
+        background-color: #03A9F4;
+        padding: 6px;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        border-radius: 15px;
+        margin-right: -13px;
+        margin-top: -12.5px;
+      }
+      .plan {
+        background-color: #03A9F4;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        width: 100%;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .price {
+        width: 207px;
+        height: 207px;
+        padding-top: 40%;
+        background-color: #DDDDDD;
+        border-radius: 50%;
+        margin-top: 20px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 2rem;
+      }
+      .clear {
+        clear: both;
+      }
     </style>
     
   </head>
   <body>
-    
+    <div class="container">
+      <div class="parent-one">
+        <div class="plan">basic</div>
+        <div class="price">free</div>
+      </div>
+      <div class="parent-two">
+        <div class="plan">pro</div>
+        <div class="price">&dollar;30</div>
+      </div>
+      <p class="clear"></p>
+    </div>
   </body>
 </html>
