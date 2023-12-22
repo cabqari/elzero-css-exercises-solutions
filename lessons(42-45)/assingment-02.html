@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Two</title>
+    
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div {
+        background-color: #eee !important;
+        border: none !important;
+        font-size: 20px !important;
+        color: black !important;
+        width: 400px;
+        margin: auto;
+        text-indent: -9999px;
+        /* font-size: 0;
+        color: rgba(255, 255, 255, 0); */
+        position: relative;
+      }
+      div::before {
+        content: "Elzero";
+        position: absolute;
+        color: black;
+        font-weight: bold;
+        text-indent: 0;
+        top: 50%;
+        left: 50%;
+        margin-top: -11px;
+        margin-left: -30px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div style="
+      background-color: red;
+      color: white;
+      padding: 20px;
+      border: 1px solid blue;
+      font-size: 80px;">
+      Hello Div
+    </div>
+  </body>
+</html>

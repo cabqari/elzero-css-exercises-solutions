@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment One</title>
+    
+    <style>
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .parent {
+        text-align: center;
+        width: 400px;
+        padding: 20px;
+        height: 200px;
+        background-color: #F2F2F4;
+        margin: 40px auto 0;
+        text-transform: capitalize;
+        transition: 0.5s;
+      }
+      .parent:hover {
+        margin-top: 10px;
+      }
+      .child {
+        width: 100%;
+        background-color: #DEDEDC;
+        padding: 20px;
+        transition-duration: 0.5s;
+        transition-delay: 0.5s;
+      }
+      .parent:hover .child {
+        margin-top: 40px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="parent">
+      <p>will go up on hover after half second</p>
+      <div class="child">
+        will go down on hover in half second
+      </div>
+    </div>
+  </body>
+</html>
