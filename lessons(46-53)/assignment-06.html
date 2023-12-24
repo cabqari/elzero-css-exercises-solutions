@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment six</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --padding: 12px;
+        --margin: 12px;
+        --background-color: #ddd;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .page {
+        width: 800px;
+        height: 95vh;
+        background-color: #eee;
+        margin: 20px auto;
+        padding: var(--padding);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: var(--margin);
+      }
+      header div {
+        background-color: #ddd;
+        padding: var(--padding);
+        margin-right: var(--margin);
+      }
+      nav {
+        display: flex;
+        flex: 1;
+        background: var(--background-color);
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      nav li {
+        padding: var(--padding);
+      }
+      main {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        flex: 1;
+      }
+      main article {
+        flex: 1;
+        margin-right: var(--margin);
+      }
+      main aside {
+        flex-basis: 25%;
+      }
+      main article,
+      main aside,
+      footer {
+        padding: var(--padding);
+        background-color: var(--background-color);
+      }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: var(--margin);
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="logo">Logo</div>
+        <nav>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </nav>
+      </header>
+      <main>
+        <article>Content</article>
+        <aside>Sidebar</aside>
+      </main>
+      <footer>
+        <div class="copyright">Copyright 2024</div>
+        <div class="design">Designed By Elzero</div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Five</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .parent {
+        width: 600px;
+        height: 300px;
+        margin: 20px auto;
+        background-color: #eee;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .parent div {
+        color: white;
+        flex-basis: calc(400px / 4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+      }
+      .one {
+        background-color: #FF9800;
+        order: -1;
+      }
+      .two {
+        background-color: #8BC34A;
+        align-self: flex-end;
+      }
+      .three {
+        background-color: #795548;
+      }
+      .four {
+        background-color: #673AB7;
+        order: -2;
+      }
+      .two,
+      .four {
+        align-self: flex-end;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="parent">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+    </div>
+  </body>
+</html>
