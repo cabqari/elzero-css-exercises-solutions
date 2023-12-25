@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment One</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div {
+        width: 600px;
+        position: relative;
+        background-color: #eee;
+        border-left: 8px solid #F44336;
+        border-right: 8px solid #5E37A2;
+        margin: 20px auto;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 25px;
+        letter-spacing: 4px;
+      }
+      div::first-letter {
+        color: #F44336;
+      }
+      div::before {
+        content: "";
+        position: absolute;
+        height: 8px;
+        /* width: calc(100% + 16px); 
+        top: -8px;
+        left: -8px; */
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(to right, #F44336 20%, #2196F3 20%, #2196F3 40%, #4CAF50 40%, #4CAF50 60%, #E91E63 60%, #E91E63 80%, #5E37A2 80%, #5E37A2 100%);
+      }
+      div::after {
+        content: "";
+        position: absolute;
+        height: 8px;
+
+        /* You can use either those two steps of Positioning */
+        width: calc(100% + 16px); 
+        bottom: -8px;
+        left: -8px;
+        /* width: 100%;
+        top: 0;
+        left: 0; */
+        background-image: linear-gradient(to right, #F44336 20%, #2196F3 20%, #2196F3 40%, #4CAF50 40%, #4CAF50 60%, #E91E63 60%, #E91E63 80%, #5E37A2 80%, #5E37A2 100%);
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <div>Elzero</div>
+  </body>
+</html>

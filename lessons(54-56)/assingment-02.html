@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Two</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div {
+        margin: 20px auto;
+        position: relative;
+        width: 600px;
+      }
+      input {
+        width: 100%;
+        background-color: #F4F4F4;
+        padding: 20px;
+        outline: none;
+        border: none;
+        caret-color: red;
+      }
+      input::placeholder {
+        color: grey;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+      }
+      div::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        left: 0;
+        bottom: -3px;
+        background-image: linear-gradient(to right, #F54437 50%, #009688 50%, #009688 100%);
+      }
+    </style>
+
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <input type="text" value="Elzero" style="font-size: 1.2rem;">
+      </div>
+      <div>
+        <input type="text" placeholder="two">
+      </div>
+      <div>
+        <input type="text" placeholder="three">
+      </div>
+    </form>
+  </body>
+</html>
