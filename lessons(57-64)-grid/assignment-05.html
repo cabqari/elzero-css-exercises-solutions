@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Five</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .grid {
+        background-color: #ddd;
+        padding: 20px;
+        width: 800px;
+        height: 400px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 370px);
+        justify-content: space-between;
+        align-content: space-between;
+        column-gap: 20px;
+      }
+      .grid div {
+        color: white;
+        font-weight: bold;
+        background-color: #E91E63;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="grid">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+  </body>
+</html>

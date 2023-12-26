@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Jomhuria&family=Montserrat:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <title>Assignment Six</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: cairo;
+      }
+      .team-members {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        grid-template-rows: repeat(auto-fill, 300px);
+        gap: 10px;
+        background-color: #eee;
+        padding: 50px;
+      }
+      .profile {
+        display: grid;
+        padding: 10px;
+        grid-template-columns: 100%;
+        align-content: flex-start;
+        gap: 12px;
+        background-color: #fff;
+        text-transform: capitalize;
+        position: relative;
+      }
+      .profile::before {
+        content: '"';
+        position: absolute;
+        font-size: 50px;
+        color: #A8A8A8;
+        bottom: -40px;
+        right: 16px;
+        transform: rotate(15deg);
+      }
+      .profile::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: 1.5px solid #FF3D00;
+      }
+      h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #000;
+      }
+      .profile .job {
+        color: #A8A8A8;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      .about .title {
+        color: #000;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .about .descr {
+        font-size: 12px;
+      }
+      .person-one {
+        grid-column: span 2;
+      }
+      .person-three {
+        grid-row: span 3;
+      }
+      .person-four {
+        grid-row: span 2;
+      }
+      .person-five {
+        grid-column: span 2;
+      }
+      .person-six {
+        grid-column: span 2;
+      }
+      .person-three,
+      .person-five,
+      .person-eight {
+        color: white;
+        background-color: #000;
+      }
+      .person-three h3,
+      .person-five h3,
+      .person-eight h3 {
+        color: white;
+      }
+      .person-three .title,
+      .person-five .title,
+      .person-eight .title {
+        color: white;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="team-members">
+      <div class="profile person-one">
+        <div class="id">
+          <h3>osama mohamed</h3>
+          <p class="job">full-Stack developer</p>
+        </div>
+        <div class="about">
+          <div class="title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aperiam voluptatum, necessitatibus dolorum eos officiis iste officia vitae ipsum fugit aspernatur quos, asperiores suscipit, tenetur nobis odio et reiciendis! Sequi.
+          </div>
+          <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae modi minima quidem totam aliquid, officiis placeat quod porro atque perferendis sed tenetur eum molestias iure ad, iusto dignissimos impedit.</p>
+        </div>
+      </div>
+      <div class="profile person-two">
+        <div class="id">
+          <h3>osama mohamed</h3>
+          <p class="job">full-Stack developer</p>
+        </div>
+        <div class="about">
+          <div class="title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aperiam voluptatum adipisicing elit. Assumenda
+          </div>
+          <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda. adipisicing elit. Assumenda</p>
+        </div>
+      </div>
+      <div class="profile person-three">
+        <div class="id">
+          <h3>osama mohamed</h3>
+          <p class="job">full-Stack developer</p>
+        </div>
+        <div class="about">
+          <div class="title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aperiam voluptatum, necessitatibus dolorum eos officiis iste officia vitae ipsum fugit aspernatur quos, asperiores suscipit, tenetur nobis odio et reiciendis! Sequi.
+          </div>
+          <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae modi minima quidem totam aliquid, officiis placeat quod porro atque perferendis sed tenetur eum molestias iure ad, iusto dignissimos impedit. 
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus corrupti repudiandae cum voluptatum fugiat voluptates quaerat quam, sunt veniam. Mollitia incidunt cumque eius ipsum similique quae optio commodi atque nulla.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis, ex distinctio et quam voluptatibus provident accusantium tempora labore vero pariatur voluptatem sapiente adipisci nemo fugiat culpa, deserunt, reprehenderit nihil?
+          </p>
+        </div>
+      </div>
+      <div class="profile person-four">
+        <div class="id">
+          <h3>osama mohamed</h3>
+          <p class="job">full-Stack developer</p>
+        </div>
+        <div class="about">
+          <div class="title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aperiam voluptatum,
+          </div>
+          <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae modi minima quidem totam aliquid, officiis placeat quod porro atque perferendis sed tenetur eum molestias iure ad, iusto dignissimos impedit.
+            necessitatibus dolorum eos officiis iste officia vitae ipsum fugit aspernatur quos, asperiores suscipit, tenetur nobis odio et reiciendis! Sequi.
+            necessitatibus dolorum eos officiis iste officia vitae ipsum fugit aspernatur quos, asperiores suscipit, tenetur nobis odio et reiciendis! Sequi.
+          </p>
+        </div>
+      </div>
+      <div class="profile person-five">
+        <div class="id">
+          <h3>osama mohamed</h3>
+          <p class="job">full-Stack developer</p>
+        </div>
+        <div class="about">
+          <div class="title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aperiam voluptatum, necessitatibus dolorum eos officiis iste officia vitae ipsum fugit aspernatur quos, asperiores suscipit, tenetur nobis odio et reiciendis! Sequi.
+          </div>
+          <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae modi minima quidem totam aliquid, officiis placeat quod porro atque perferendis sed tenetur eum molestias iure ad, iusto dignissimos impedit.</p>
+        </div>
+      </div>
+      <div class="profile person-six ">
+        <div class="id">
+          <h3>osama mohamed</h3>
+          <p class="job">full-Stack developer</p>
+        </div>
+        <div class="about">
+          <div class="title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aperiam voluptatum, necessitatibus dolorum eos officiis iste officia vitae ipsum fugit aspernatur quos, asperiores suscipit, tenetur nobis odio et reiciendis! Sequi.
+          </div>
+          <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae modi minima quidem totam aliquid, officiis placeat quod porro atque perferendis sed tenetur eum molestias iure ad, iusto dignissimos impedit.</p>
+        </div>
+      </div>
+      <div class="profile person-seven">
+        <div class="id">
+          <h3>osama mohamed</h3>
+          <p class="job">full-Stack developer</p>
+        </div>
+        <div class="about">
+          <div class="title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aperiam voluptatum adipisicing elit. Assumenda
+          </div>
+          <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda. adipisicing elit. Assumenda</p>
+        </div>
+      </div>
+      <div class="profile person-eight">
+        <div class="id">
+          <h3>osama mohamed</h3>
+          <p class="job">full-Stack developer</p>
+        </div>
+        <div class="about">
+          <div class="title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aperiam voluptatum adipisicing elit. Assumenda
+          </div>
+          <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda. adipisicing elit. Assumenda</p>
+        </div>
+      </div>
+      <div class="profile person-nine">
+        <div class="id">
+          <h3>osama mohamed</h3>
+          <p class="job">full-Stack developer</p>
+        </div>
+        <div class="about">
+          <div class="title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aperiam voluptatum adipisicing elit. Assumenda
+          </div>
+          <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda. adipisicing elit. Assumenda</p>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="id">
+          <h3>osama mohamed</h3>
+          <p class="job">full-Stack developer</p>
+        </div>
+        <div class="about">
+          <div class="title">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aperiam voluptatum adipisicing elit. Assumenda
+          </div>
+          <p class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda. adipisicing elit. Assumenda</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

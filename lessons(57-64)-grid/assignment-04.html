@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Four</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .grid {
+        background-color: #ddd;
+        padding: 20px;
+        width: 800px;
+        height: 400px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 240px);
+        gap: 20px;
+      }
+      .grid div {
+        color: white;
+        font-weight: bold;
+        background-color: #2196F3;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .one {
+        order: 8;
+        grid-column: span 3;
+      }
+      .two {
+        grid-column: span 2;
+      }
+      .five {
+        grid-area: 3 / 2 / 6 / 4;
+      }
+      .eight {
+        order: -1;
+        grid-column: span 3;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="grid">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+      <div class="five">5</div>
+      <div class="six">6</div>
+      <div class="seven">7</div>
+      <div class="eight">8</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment One</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .grid {
+        background-color: #ddd;
+        padding: 20px;
+        width: 800px;
+        height: 400px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 240px);
+        grid-template-rows: auto 1fr;
+        gap: 20px;
+      }
+      .grid div {
+        padding: 20px;
+        background-color: #607D8B;
+        counter-increment: tiro;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .grid div::before {
+        content: "Element" " " counter(tiro);
+        position: absolute;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
