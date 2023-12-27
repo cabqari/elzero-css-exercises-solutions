@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment One</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      div {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        background-color: #eee;
+        color: #03A9F4;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+        border: 2px solid #CCCCCC;
+      }
+      div::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #03A9F4;
+        transform: rotate(-5deg) scale(1.02);
+        z-index: -1;
+      }
+      div::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; 
+        background-color: #E91E63;
+        transform: rotate(5deg) scale(1.02);
+        z-index: -2;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div>Elzero</div>
+  </body>
+</html>
