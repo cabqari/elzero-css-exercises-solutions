@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment One</title>
+
+    <style>
+      body {
+        box-sizing: border-box;
+      }
+      :root {
+        --primary-color: #FF5722;
+      }
+      h1 {
+        padding: 20px;
+        font-size: 30px;
+        color: white;
+        margin: 40px auto;
+        width: fit-content;
+        position: relative;
+        background-color: var(--primary-color);
+      }
+      h1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--primary-color);
+        z-index: -1;
+        transform: skew(-12deg, -12deg);
+      }
+      h1::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: var(--primary-color);
+        z-index: -2;
+        transform: skew(12deg, 12deg);
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>Elzero</h1>
+  </body>
+</html>
