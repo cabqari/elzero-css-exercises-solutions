@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment One</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        transform: rotate(40deg);
+        border: 5px solid;
+        border-color: transparent #E91E74 #E91E74 #E91E74;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: rotate;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+      div:hover {
+        animation-play-state: paused;
+      }
+      div::before, 
+      div::after {
+        content: "";
+        position: absolute;
+        border: 5px solid ;
+        border-radius: 50%;
+      }
+      div::before {
+        border-color: #2494EC #2494EC transparent #2494EC;
+        height: 56px;
+        width: 56px;
+      }
+      div::after {
+        border-color: #FC9A00 #FC9A00 #FC9A00 transparent;
+        height: 70px;
+        width: 70px;
+      }
+
+      @keyframes rotate{
+        to {
+          transform: rotate(400deg);
+        }
+      }
+    </style>
+
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

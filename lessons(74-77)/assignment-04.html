@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Four</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .parent {
+        width: 500px;
+        height: 400px;
+        background-color: #eee;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 20px;
+      }
+      .one {
+        border-top: 50px solid #000;
+        border-left: 50px solid #000;
+        border-bottom: 50px solid #000;
+        position: relative;
+      }
+      .one::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
+        width: 100%;
+        height: 50px;
+        background-color: #000;
+      }
+      .one::after,
+      .two::after {
+        position: absolute;
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-color: #ec9a02;
+        opacity: 0;
+      }
+      .one::after {
+        top: -40px;
+        right: 10px;
+        animation: animate-one 9s ease-in-out 4s alternate 2;
+      }
+      .two {
+        border-left: 50px solid #000;
+        border-bottom: 50px solid #000;
+        position: relative;
+      }
+      .two::after {
+        right: 10px;
+        bottom: -40px;
+        animation: animate-two 3s linear;
+      }
+
+      @keyframes animate-one {
+        0% {
+          opacity: 1;
+          top: -40px;
+          right: 10px;
+        }
+        16.5% {
+          opacity: 1;
+          transform: translateX(-165px);
+        }
+        33% {
+          opacity: 1;
+          transform: translate(-165px, 155px);
+        }
+        49.5% {
+          opacity: 1;
+          transform: translate(0, 155px);
+        }
+        66% {
+          opacity: 1;
+          transform: translate(-165px, 155px);
+        }
+        82.5% {
+          opacity: 1;
+          transform: translate(-165px, 310px);
+        }
+        99% {
+          opacity: 1;
+          transform: translate(0, 310px);
+        }
+        100% {
+          opacity: 0;
+          transform: translate(0, 310px);
+        }
+      }
+
+      @keyframes animate-two {
+        0% {
+          opacity: 1;
+          right: 10px;
+          bottom: -40px;
+        }
+        40% {
+          transform: translate(-165px);
+          opacity: 1;
+        }
+        95% {
+          transform: translate(-165px, -310px);
+          opacity: 1;
+        }
+        99% {
+          transform: translate(-165px, -310px);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="one"></div>
+      <div class="two"></div>
+    </div>
+  </body>
+</html>
