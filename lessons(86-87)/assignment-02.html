@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Two</title>
+
+    <style>
+      div {
+        background-color: #DDD;
+        width: 600px;
+        margin: 40px auto;
+        padding: 30px;
+        position: relative;
+      }
+      
+      .arrow.top::before{
+        content: "";
+        border: 15px solid transparent;
+        border-bottom-color: #DDD;
+        position: absolute;
+        left: 50%;
+        top: -30px;
+        transform: translateX(-50%);      
+      }
+      .arrow.right::before { 
+        content: "";
+        border: 15px solid transparent;
+        border-left-color: #DDD;
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        transform: translateY(-50%);
+      }
+      .arrow.bottom::before {
+        content: "";
+        border: 16px solid transparent;
+        border-top-color: #DDD;
+        position: absolute;
+        left: 50%;
+        bottom: -30px;
+        transform: translateX(-50%);
+      }
+      .arrow.left::before {
+        content: "";
+        border: 16px solid transparent;
+        border-right-color: #DDD;
+        position: absolute;
+        top: 50%;
+        left: -30px;
+        transform: translateY(-50%);
+      }
+    </style>
+    
+  </head>
+  <body>
+    <div class="arrow top">Elzero</div>
+    <div class="arrow right">Elzero</div>
+    <div class="arrow bottom">Elzero</div>
+    <div class="arrow left">Elzero</div>
+  </body>
+</html>
